@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com"/>
+  <remote name="oe" fetch="http://git.openembedded.org"/>
+  <remote name="st" fetch="https://github.com/STMicroelectronics"/>
+  <remote name="qt" fetch="git://code.qt.io/yocto"/>
+
+  <project  name="bitbake"
+            path="sources/openembedded-core/bitbake"
+            remote="oe"
+            revision="7af7e04f3adc8ba144d9e2e6b37ed4ddb3b59df0"/>
+  <project  name="meta-openembedded"
+            path="sources/meta-openembedded"
+            remote="oe"
+            revision="5124ac4a658899158f4a7a2ddf1d2ca931ec7d0e"/>
+  <project  name="meta-st-openstlinux"
+            path="sources/meta-st/meta-st-openstlinux"
+            remote="st"
+            revision="993e43adedbfe95dca8e93a64ec091a83a604633"/>
+  <project  name="meta-st-stm32mp"
+            path="sources/meta-st/meta-st-stm32mp"
+            remote="st"
+            revision="e53460d9939f5e2c71f203d50f4dad8977237d21"/>
+  <project  name="meta-st-stm32mp-addons"
+            path="sources/meta-st/meta-st-stm32mp-addons"
+            remote="st"
+            revision="3597fb343419edd78c3d9b1505a9f3eb0469efbd"/>
+  <project  name="meta-st-scripts"
+            path="sources/meta-st/meta-st-scripts"
+            remote="st"
+            revision="8826802b453ef2ead61b07c7bc5ab525a405df04"/>
+  <project  name="meta-st-x-linux-qt"
+            path="sources/meta-st/meta-st-x-linux-qt"
+            remote="st"
+            revision="b4f4d26b3e53359f2179102271f5f1e31f5b9328"/>
+  <project  name="meta-qt6"
+            path="sources/meta-qt6"
+            remote="qt"
+            revision="364b0f0ccd2eafb251f0d1d22b68e60100b01dd2"/>
+  <project  name="openembedded-core"
+            path="sources/openembedded-core"
+            remote="oe"
+            revision="ab57471acad7ce2a037480dc7b301104620f1ebf"/>
+</manifest>
