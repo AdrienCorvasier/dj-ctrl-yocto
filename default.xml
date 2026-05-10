@@ -4,6 +4,7 @@
   <remote name="oe" fetch="http://git.openembedded.org"/>
   <remote name="st" fetch="https://github.com/STMicroelectronics"/>
   <remote name="qt" fetch="git://code.qt.io/yocto"/>
+  <remote name="own" fetch="https://github.com/AdrienCorvasier"/>
 
   <project  name="bitbake"
             path="sources/openembedded-core/bitbake"
@@ -40,5 +41,13 @@
   <project  name="openembedded-core"
             path="sources/openembedded-core"
             remote="oe"
-            revision="ab57471acad7ce2a037480dc7b301104620f1ebf"/>
+            revision="dc2df90b1d4f71023169d492f3819326e0e6c055">
+    <linkfile src="oe-init-build-env" dest="setup-environment"/>
+  </project>
+  <project  name="meta-dj-ctrl"
+            path="sources/meta-dj-ctrl"
+            remote="own"
+            revision="92a51f274532378db1992b954fb6cd0c9d35806f">
+    <linkfile src="scripts/setup-project" dest="setup-project"/>
+  </project>
 </manifest>
